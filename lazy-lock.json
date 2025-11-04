@@ -1,0 +1,8 @@
+{
+  "better-escape.nvim": { "branch": "master", "commit": "19a38aab94961016430905ebec30d272a01e9742" },
+  "img-clip.nvim": { "branch": "main", "commit": "e7e29f0d07110405adecd576b602306a7edd507a" },
+  "lazy.nvim": { "branch": "main", "commit": "202d8e92b3a74ac88eb3a7f1e40fb59b4c2a6535" },
+  "mini.nvim": { "branch": "main", "commit": "429e5f9dc9cd59bf76cd98b687300f0a384a7f52" },
+  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
+  "simpleblack": { "branch": "master", "commit": "e774b34b31d565ab17a892dfae9b8a17d18eacd9" }
+}
