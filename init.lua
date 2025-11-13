@@ -1,20 +1,20 @@
-require('config.lazy')
+-- bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    'git', 'clone', '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', lazypath
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require('config.options')
 require('config.keymaps')
-require('config.imgclip').setup({})
 
--- config
-vim.o.number = true
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
-vim.o.smartcase = true
-vim.o.ignorecase = true
-vim.o.wrap = false
-vim.o.hlsearch = false
-vim.o.signcolumn = 'yes'
-vim.o.laststatus = 3
-vim.o.showmode = false
-vim.o.autochdir = true
+-- load plugins
+require('lazy').setup('plugins')
 
--- set python env
-vim.g.python3_host_prog = '~/.local/share/nvim-venv/bin/python'
+-- colorscheme
+vim.cmd.colorscheme('simpleblack')
 
